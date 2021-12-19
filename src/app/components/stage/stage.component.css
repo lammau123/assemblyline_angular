@@ -1,0 +1,12 @@
+.stage-container {  
+    width: 150px;
+    margin: 10px;
+}
+
+.stage {  
+    margin-bottom: 5px;
+}
+
+.stage-item:hover {
+    background-color: yellow;
+}

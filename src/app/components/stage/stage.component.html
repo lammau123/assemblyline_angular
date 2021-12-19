@@ -1,0 +1,8 @@
+<div class="stage-container">
+    <h3>{{name}}</h3>
+    <div class="stage" *ngFor="let d of data; let i=index">
+        <button class="stage-item" 
+            (click)="leftClick(i)" 
+            (contextmenu)="rightClick(i)">{{d}}</button>
+    </div>
+</div>

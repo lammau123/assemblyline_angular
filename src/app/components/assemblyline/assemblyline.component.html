@@ -1,0 +1,16 @@
+<form [formGroup]="formGroup">   
+    <div class="form-container">
+        <label for="item">Add an item: </label>
+        <input type="text" 
+                id="item" 
+                name="item" 
+                formControlName="item"
+                (keyup.enter)="onEnter()"/>
+    </div>    
+</form>
+<div class="stage-containers">
+    <app-stage *ngFor="let stage of stages; let i=index" 
+                [name]="stage" 
+                (moveNext)="moveNext(i, $event)"
+                (movePrevious)="movePrevious(i, $event)"></app-stage>
+<div>
